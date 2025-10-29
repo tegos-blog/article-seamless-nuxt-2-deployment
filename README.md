@@ -1,41 +1,37 @@
-# Seamless Nuxt 2 Deployment: A Step-by-Step Guide with GitLab CI/CD and DigitalOcean
+# Seamless Nuxt 2 Deployment
 
-Welcome to the repository for the article **"Seamless Nuxt 2 Deployment: A Step-by-Step Guide with GitLab CI/CD and
-DigitalOcean."** This repository contains the content of the article, divided into logical sections, along with links to
-additional resources.
+![Seamless Nuxt 2 Deployment](assets/poster.jpg)
 
-## 📖 Article Link
+### Step-by-Step Guide with GitLab CI/CD and DigitalOcean
 
-Read the full article
-here: [Seamless Nuxt 2 Deployment](https://dev.to/tegos/seamless-nuxt-2-deployment-a-step-by-step-guide-with-gitlab-cicd-and-digitalocean-441d).
-
-## 📂 Repository Structure
-
-This repository includes the following files:
-
-```plaintext
-.
-├── .gitignore                             # Git ignore file
-├── 0-title.md                             # Article title section
-├── 1-introduction.md                      # Introduction to the guide
-├── 2-prerequisites.md                     # Prerequisites for the deployment
-├── 3-setting-up-the-digital-ocean-server.md # Step-by-step server setup
-├── 4-configuring-git-lab-ci-cd.md         # CI/CD configuration instructions
-├── 5-enabling-https-with-let’s-encrypt.md # Enabling HTTPS with Let’s Encrypt
-├── 6-result.md                            # Deployment result section
-├── 7-conclusion.md                        # Conclusion and final thoughts
-└── README.md                              # Project documentation (this file)
-```
-
-## 🔗 Repository with Code
-
-You can find the code referenced in this article in the following
-repository: [Nuxt 2 Deployment Code](https://gitlab.com/tegos/demo-deploy-nuxt2-app).
-
-## 🙌 Feedback and Contributions
-
-If you have suggestions, feedback, or improvements, feel free to open an issue or submit a pull request.
+**Article:** [Read on DEV](https://dev.to/tegos/seamless-nuxt-2-deployment-a-step-by-step-guide-with-gitlab-cicd-and-digitalocean-441d)  
+**Repository:** [View source](https://gitlab.com/tegos/demo-deploy-nuxt2-app)
 
 ---
 
-Thank you for exploring this guide! 🚀
+## Overview
+
+Deploy your **Nuxt 2** application with **GitLab CI/CD** and **DigitalOcean** - automated builds, zero-downtime deployments, and secure HTTPS.
+
+---
+
+## Steps
+
+1. **Server Setup**: Create a DigitalOcean Droplet, lock it down with SSH & firewall, install Node 18.x, PM2 and Nginx.
+2. **CI/CD Pipeline**: Configure `.gitlab-ci.yml` to test, build and deploy your app via SSH on main branch.
+3. **Deployment Workflow**: Use `ecosystem.config.js` + PM2 for cluster mode, graceful reloads and release versioning.
+4. **HTTPS Setup**: Use Let's Encrypt + Certbot to enable SSL on your domain.
+
+---
+
+## Results
+
+- Automatic deployment on pushes to `main`
+- Zero downtime with PM2 hot-reload
+- Live app accessible via domain
+- Clean, repeatable deployment pipeline
+
+---
+
+**Read the full guide:** [Seamless Nuxt 2 Deployment](https://dev.to/tegos/seamless-nuxt-2-deployment-a-step-by-step-guide-with-gitlab-cicd-and-digitalocean-441d)  
+**Explore the code:** [GitLab Repository](https://gitlab.com/tegos/demo-deploy-nuxt2-app)
